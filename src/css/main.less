@@ -12,6 +12,46 @@
 @txt_main_highlight: #F55B44;
 @txt_footer: #E7D9C8;
 
+// 5 column layout (hope this works)
+.col-xs-05,
+.col-sm-05,
+.col-md-05,
+.col-lg-05 {
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-05 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-05 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-05 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-05 {
+        width: 20%;
+        float:left;
+    }
+}
+// end 5-column layout code
+
+body {
+    text-align: center;
+}
+
 .header {
     color: @txt_header;
 
@@ -27,56 +67,7 @@
     color: @txt_footer;
 }
 
-.heroHolder {
-
-    padding: 0px !important;
-}
-
-#hero {
-
-    width: 100%;
-
-    .carousel-inner {
-
-        //height: 380px;
-
-        .rightHide {
-            vertical-align: middle;
-        }
-
-        .item {
-            
-            .col-xs-8 {
-                float: none !important;
-                //width: 100%;
-                margin-left: auto;
-                margin-right: auto;
-
-                img {
-                    //width: 100%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-        }
-
-    }
-
-    .carousel-control {
-        
-        display: block;
-        height: 100%;
-
-        .helper {
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-        }
-
-        img {
-            vertical-align: middle;
-            max-width: 15px;
-        }
-    }
-    
+.spacer {
+    display: block;
+    height: 50px;
 }
