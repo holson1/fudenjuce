@@ -55,19 +55,86 @@ body {
     }
 }
 
+h1 {
+        font-family: good_footregular;
+        font-size: 3em;
+}
+
+h2 {
+        font-size: 1.1em;
+        letter-spacing: 1.5px;
+        font-family: proxima_novaextrabold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: @txt_main_highlight;
+}
+
+h3 {
+        font-size: 0.9em;
+        letter-spacing: 1.5px;
+        font-family: proxima_novaextrabold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: @txt_main_highlight;
+}
+
+h4 {
+        font-size: 1.05em;
+        font-family: proxima_nova_rgregular;
+        font-weight: bold;
+}
+
 .header {
     color: @txt_header;
-    background-image: url('assets/images/header_bg.jpg');
+    background-image: url('../../assets/images/header_bg.jpg');
+    background-size: contain;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
     @media (min-width: 768px) {
         height: 200%;
-        //background-image: url('assets/images/header_bg.jpg');
+    }
+
+    .header-img {
+        position: absolute;
     }
 
     #logo {
-        position: absolute;
-        left: 0px;
-        top: 15px;
+       left: 0px;
     }
+
+    .desktop-links > a {
+        display: block;
+        margin-top: 15px;
+        font-size: 0.9em;
+        letter-spacing: 1.5px;
+        font-family: proxima_novaextrabold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 768px) {
+        .desktop-links {
+            display: none;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: proxima_nova_rgregular;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #80C5E8;
+    font-family: proxima_nova_rgregular;
+}
+
+.heroHolder {
+
+    padding: 0px !important;
 }
 
 .footer {
@@ -76,18 +143,22 @@ body {
     padding-top: 25px;
     padding-bottom: 35px;
     text-align: left;
-    
-    h3 {
-        font-size: 0.9em;
-        letter-spacing: 1.5px;
-        font-family: proxima_novaextrabold;
-        margin-bottom: 15px;
+
+    // set up the footer for mobile
+    @media (max-width: 768px) {
+        .locationFooter {
+            margin-top: 30px;
+        }
+        text-align: center;
     }
 
     p {
         font-size: 0.8em;
         line-height: 70%;
-        
+    }
+
+    h3 {
+        color: @txt_footer;
     }
 
     .footer-logo {
@@ -117,4 +188,21 @@ body {
 .spacer {
     display: block;
     height: 50px;
+    @media (max-width: 768px) {
+        height: 25px;
+    }
+}
+
+.text-left {
+    text-align: left;
+    ol {
+        padding-left: inherit;
+    }
+}
+
+.mobile-spacer {
+    @media (max-width: 768px) {
+        display: block;
+        height: 25px;
+    }
 }

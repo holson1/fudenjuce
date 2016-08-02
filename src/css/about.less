@@ -1,0 +1,43 @@
+.heroHolder {
+    overflow: hidden;
+}
+
+// x-small size hero
+@media (max-width: 768px) {
+
+    .heroHolder > img {
+        max-width: 200%;
+        position: relative;
+        left: -50%;
+    }
+}
+
+// small size hero
+@media (max-width: 992px) {
+
+    .heroHolder > img {
+        max-width: 150%;
+        position: relative;
+        left: -25%;
+    }
+}
+
+body {
+    
+    font-size: 1.4em;
+    line-height: 175%;
+    color: #3E4E4E;
+
+    h1 {
+        font-family: good_footregular;
+        font-size: 3.1em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+#freeWifi div {
+    background-image: url('../../assets/images/about_freewifi-backer.png');
+    //background-size: contain;
+    background-size: 100% 100%;
+}
