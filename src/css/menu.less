@@ -1,5 +1,11 @@
-p, h2, h3, h4 {
-    text-align: left;
+.menu {
+    p:not(.center), h2, h4 {
+        text-align: left;
+    }
+}
+
+h3 {
+    color: #3E4E4E;
 }
 
 h4 {
@@ -12,6 +18,51 @@ p {
     line-height: 160%;
 }
 
+.hero {
+    overflow: hidden;
+}
+
+// x-small size hero
+@media (max-width: 768px) {
+
+    .heroHolder {
+        width: 200%;
+        left: 50%;
+    }
+
+    .heroHolder > img {
+        max-width: 150%;
+        position: relative;
+        left: -25%;
+    }
+}
+
+.menu-bg {
+    width: 25%;
+    margin-left: 6.25%;
+    background-image: url('../../assets/images/menu_deselected.png');
+    background-size: 100% 100%;
+    padding: 2px;
+}
+
+.menu-bg-selected {
+    width: 25%;
+    margin-left: 6.25%;
+    background-image: url('../../assets/images/menu_selected.png');
+    background-size: 100% 100%;
+    padding: 2px;
+}
+
+.menu-bg:hover {
+    background-image: url('../../assets/images/menu_hover.png');
+    background-size: 100% 100%;
+}
+
 .light {
     color: #888;
+}
+
+.extras {
+    background-color: #F4F2F3;
+    padding: 15px;
 }
