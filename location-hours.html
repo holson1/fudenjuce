@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>fudenjuce</title>
+        <title>fudenj&uuml;ce</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="stylesheet" type="text/css" href="assets/fonts/stylesheet.css"/>
         <link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css"/>
         <link rel="stylesheet/less" type="text/css" href="./src/css/main.less"/>
-        <link rel="stylesheet/less" type="text/css" href="./src/css/menu.less"/>
+        <link rel="stylesheet/less" type="text/css" href="./src/css/location-hours.less"/>
     </head>
     <body>
         <div class="container-fluid">
@@ -34,60 +34,33 @@
 
             <div class="row hero">
                 <div class="col-xs-12 heroHolder">
-                    <img class="img-responsive" src="assets/images/menusoups_hero.jpg"/>
+                    <img class="img-responsive" src="assets/images/locationhours_hero.jpg"/>
                 </div>
             </div>
 
-            <div class="spacer">
-            </div>
+            <div class="row no-padding location-content">
+                <div class="col-xs-12 col-sm-6 no-padding iframe-holder" id="map">
+                    <!--<iframe frameborder=0 src="https://www.google.com/maps/embed/v1/place?q=Harrods,Brompton%20Rd,%20UK
+                        &zoom=17
+                        &key=AIzaSyCiPkNrn-h-noVxi4oSMwuDjnUkWtaHQFk">
+                    </iframe>-->
+                </div>
+                <div class="col-xs-6 col-sm-6 info">
+                    <p class="light">Photo credit T.A. Roth</p>
 
-            <div class="row" id="menuSelect">
-                <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-                    <div class="row">
-                        <a href="menu-food.html">
-                            <div class="col-xs-4 menu-bg">
-                                <h3 class="center">FOOD</h3>
-                            </div>
-                        </a>
-                        <a href="menu-soups.html">
-                        <div class="col-xs-4 menu-bg-selected">
-                            <h3 class="center">SOUPS</h3>
-                        </div>
-                        </a>
-                        <a href="menu-drinks.html">
-                        <div class="col-xs-4 menu-bg">
-                            <h3 class="center">DRINKS</h3>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                    <h3>Location</h3>
+                    <p>815 Zion Street<br/>
+                    Nevada City, CA 95959</p>
 
-            <div class="spacer">
-            </div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 8am-7pm<br/>
+                    Sat: 10am-7pm<br/>
+                    Sun: 10am-5pm</p>
 
-            <div class="row menu">
-                <div class="col-xs-12">
-                    <h1>Today's Soups</h1>
+                    <h3>Contact</h3>
+                    <p>(530) 265-5282<br/>
+                    fudenjuce@gmail.com</p>
                 </div>
-                <div class="col-xs-12 spacer">
-                </div>
-                <div class="col-sm-4 col-sm-offset-2">
-                    
-                    <h4>Wild Miso Soup</h4>
-                    <p>Organic shredded carrots, organic baby spinach, organic black beans, organic wild rice, black olives, fresh avocado, organic wheat-free tamari, and light yellow miso
-                    </p>
-                    
-                </div>
-                <div class="col-sm-4">
-                    
-                    <h4>Seth's Thai Coconut Basil Soup</h4>
-                    <p>Coconut juice and coconut milk, garlic, yellow onions, fresh mushrooms, organic carrots, squash and potatoes, soy "chicken-style" broth, fresh basil, organic seitan, sea kelp noodles, fresh ginger, bamboo shoots, water chestnuts, organic celery, sea salt, organic cayenne and black pepper, and fresh cilantro</p>
-                    
-                </div>
-            </div>
-
-            <div class="spacer">
             </div>
 
             <div class="row footer">
@@ -127,6 +100,9 @@
         </div>
         <!-- Including necessary scripts -->
         <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="src/js/location-hours.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiPkNrn-h-noVxi4oSMwuDjnUkWtaHQFk&callback=initMap">
+        </script>
         <!--<script src="src/js/less.min.js"></script>-->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
         <script type="text/javascript" src="src/js/bootstrap.min.js"></script>

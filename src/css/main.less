@@ -12,7 +12,10 @@
 @txt_main_highlight: #F55B44;
 @txt_footer: #E7D9C8;
 
-// 5 column layout (hope this works)
+//  ************
+//  5 COLUMN LAYOUT
+//  ************
+
 .col-xs-05,
 .col-sm-05,
 .col-md-05,
@@ -46,16 +49,21 @@
         float:left;
     }
 }
-// end 5-column layout code
+
+//  ************
+//  FONTS
+//  ************
 
 body {
-    text-align: center;
+    //text-align: center;
     p {
         font-family: proxima_nova_rgregular;
+        //color: @txt_main_content;
     }
 }
 
 h1 {
+        text-align: center;
         font-family: good_footregular;
         font-size: 3em;
 }
@@ -83,6 +91,27 @@ h4 {
         font-family: proxima_nova_rgregular;
         font-weight: bold;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: proxima_nova_rgregular;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #80C5E8;
+    font-family: proxima_nova_rgregular;
+}
+
+li {
+    font-family: proxima_nova_rgregular;
+    color: @txt_main_content;
+}
+
+//  ************
+//  HEADER
+//  ************
 
 .header {
     color: @txt_header;
@@ -120,23 +149,14 @@ h4 {
     }
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    font-family: proxima_nova_rgregular;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #80C5E8;
-    font-family: proxima_nova_rgregular;
-}
-
-
 .heroHolder {
 
     padding: 0px !important;
 }
+
+//  ************
+//  FOOTER
+//  ************
 
 .footer {
     background-color: @bg_footer;
@@ -186,6 +206,10 @@ a:hover {
     }
 }
 
+//  ************
+//  MISC-CLASSES
+//  ************
+
 .spacer {
     display: block;
     height: 40px;
@@ -206,4 +230,17 @@ a:hover {
         display: block;
         height: 25px;
     }
+}
+
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.light {
+    color: #888;
+}
+
+.center {
+    text-align: center;
 }
