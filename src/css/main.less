@@ -113,40 +113,73 @@ li {
 //  HEADER
 //  ************
 
+.navbar {
+    margin-bottom: 0px;
+    border: none;
+}
+
+.navbar-toggle {
+    background-color: @bg_footer;
+    margin-top: 20px;
+    .icon-bar {
+        color: @txt_header;
+    }
+}
+
+#logo {
+    height: 100%;
+}
+
+.navbar-brand {
+  padding: 0px;
+  height: 80px;
+  vertical-align: middle;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: @bg_footer;
+        .navbar-nav {
+            height: 100px;
+            padding: none;
+            li {
+                height: 25px;
+                a {
+                    display: block;
+                    height: 100%;
+                    h3 {
+                        text-align: right;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.desktop-links {
+        color: @txt_header;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+}
+
 .header {
     color: @txt_header;
     background-image: url('../../assets/images/header_bg.jpg');
-    background-size: contain;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
+    background-size: 100% 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    /*
     @media (min-width: 768px) {
         height: 200%;
-    }
-
-    .header-img {
-        position: absolute;
-    }
-
-    #logo {
-       left: 0px;
-    }
-
-    .desktop-links > a {
-        display: block;
-        margin-top: 15px;
-        font-size: 0.9em;
-        letter-spacing: 1.5px;
-        font-family: proxima_novaextrabold;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-    }
-
-    @media (max-width: 768px) {
-        .desktop-links {
-            display: none;
-        }
-    }
+    }*/
 }
 
 .heroHolder {
