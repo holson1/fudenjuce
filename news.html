@@ -9,33 +9,33 @@
         <link rel="stylesheet/less" type="text/css" href="./src/css/news.less"/>
     </head>
     <body>
-        <div class="container-fluid">
             
-            <!--header-->
-            <nav class="navbar navbar-default">
-                <div class="container-fluid header">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"><img src="assets/images/logo.png"/></a>
-                    </div>
-                    
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="menu-food.html"><h3 class="desktop-links">Menu</h3></a></li>
-                            <li><a href="location-hours.html"><h3 class="desktop-links">Location &amp; Hours</h3></a></li>
-                            <li><a href="about.html"><h3 class="desktop-links">About</h3></a></li>
-                            <li><a href="news.html"><h3 class="desktop-links">News</h3></a></li>
-                        </ul> 
-                    </div>
+        <!--header-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid header">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"/></a>
                 </div>
-            </nav>
+                
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="menu-food.html"><h3 class="desktop-links">Menu</h3></a></li>
+                        <li><a href="location-hours.html"><h3 class="desktop-links">Location &amp; Hours</h3></a></li>
+                        <li><a href="about.html"><h3 class="desktop-links">About</h3></a></li>
+                        <li><a href="news.html"><h3 class="desktop-links">News</h3></a></li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
 
+        <div class="container-fluid body-wrapper">
             <div class="row hero">
                 <div class="col-xs-12 heroHolder">
                     <img class="img-responsive" src="assets/images/news_hero.jpg"/>
@@ -44,8 +44,14 @@
 
             <div class="spacer">
             </div>
-
+            
             <div class="row video">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+                    <video width="100%" height="100%" controls="true">
+                        <source src="assets/videos/fudenjuce-knco-ad-2014-2015.mp4" type="video/mp4">
+                        Your browser does not support the video that would normally be here!
+                    </video>
+                </div>
             </div>
 
             <div class="spacer">
@@ -57,30 +63,42 @@
                 </div>
                 <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 social-column">
                     <div class="social-container">
-                        <p class="img-responsive text-overlay">See what others are saying<br/>and share your story</p>
-                        <img class="img-responsive" src="assets/images/news_yelp.png"/>
+                        <a href="https://www.yelp.com/biz/fudenjuce-nevada-city" target="_blank">
+                            <p class="img-responsive text-overlay">See what others are saying<br/>and share your story</p>
+                            <img class="img-responsive" src="assets/images/news_yelp.png"/>
+                        </a>
                     </div>
                     <div class="social-container">
-                        <p class="text-overlay">Tag us in your pictures<br/>with #fudenjuce</p>
-                        <img class="img-responsive" src="assets/images/news_instagram.png"/>
+                        <a href="https://www.instagram.com/explore/locations/262678839/" target="_blank">
+                            <p class="text-overlay">Tag us in your pictures<br/>with #fudenjuce</p>
+                            <img class="img-responsive" src="assets/images/news_instagram.png"/>
+                        </a>
                     </div>
                     <div class="social-container">
-                        <p class="text-overlay">Tag us in your pictures<br/>with #fudenjuce</p>
-                        <img class="img-responsive" src="assets/images/news_tripadvisor.png"/>
+                        <a href="https://www.tripadvisor.com/Restaurant_Review-g32771-d1591967-Reviews-Fudenjuce-Nevada_City_California.html" target="_blank">
+                            <p class="text-overlay">Tag us in your pictures<br/>with #fudenjuce</p>
+                            <img class="img-responsive" src="assets/images/news_tripadvisor.png"/>
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3 social-column">
                     <div class="social-container">
-                        <p class="text-overlay">Like our page and stop<br/>by daily for updated info</p>
-                        <img class="img-responsive" src="assets/images/news_facebook.png"/>
+                        <a href="https://www.facebook.com/fudenjuce/" target="_blank">
+                            <p class="text-overlay">Like our page and stop<br/>by daily for updated info</p>
+                            <img class="img-responsive" src="assets/images/news_facebook.png"/>
+                        </a>
                     </div>
                     <div class="social-container">
-                        <p class="text-overlay">Tag us in your pictures<br/>with #fudenjuce</p>
-                        <img class="img-responsive" src="assets/images/news_twitter.png"/>
+                        <a href="https://twitter.com/hashtag/fudenjuce" target="_blank">
+                            <p class="text-overlay">Tag us in your pictures<br/>with #fudenjuce</p>
+                            <img class="img-responsive" src="assets/images/news_twitter.png"/>
+                        </a>
                     </div>
                     <div class="social-container">
-                        <p class="text-overlay">Tag us in your pictures<br/>with #fudenjuce</p>
-                        <img class="img-responsive" src="assets/images/news_happycow.png"/>
+                        <a href="https://www.happycow.net/reviews/fudenjuce-nevada-city-9918" target="_blank">
+                            <p class="text-overlay">Tag us in your pictures<br/>with #fudenjuce</p>
+                            <img class="img-responsive" src="assets/images/news_happycow.png"/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -95,6 +113,8 @@
                 <div class="spacer">
                 </div>
                 <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 news">
+
+                    <!-- Good Day Link has expired
                     <div class="row">
                         <div class="col-xs-5 col-sm-3 col-md-2">
                         <img class="img-responsive" src="assets/images/news_gooddaylogo.png"/>
@@ -103,9 +123,9 @@
                     <h2 class="news-title">Viewer Tour of Nevada City</h2>
                     <p>Courtney gets a tour of Nevada City</p>
                     <a><h2>Read More</h2></a>
-
+                    
                     <div class="spacer">
-                    </div>
+                    </div>-->
 
                     <div class="row">
                         <div class="col-xs-5 col-sm-4 col-md-3">
@@ -115,7 +135,7 @@
                     <h2 class="news-title">Fudenj&uuml;ce: Healthy Food with Heart</h2>
                     <p>For years, Chuck Stuthard found eating at most vegetarian restaurants a challenge. "It took an hour to prepare the food and then it tasted like cardboard," he said with a laugh. "I'd always wanted to show people you really can eat healthy and have it taste good."
                     </p>
-                    <a><h2>Read More</h2></a>
+                    <a href="http://www.theunion.com/news/2307528-113/businessgeneral-community-leadstories" target="_blank"><h2>Read More</h2></a>
 
                     <div class="spacer">
                     </div>
@@ -123,7 +143,7 @@
                     <h2 class="news-title">Ninth Annual Empty Bowl Set for Saturday</h2>
                     <p>Sharing a simple meal of soup and bread is an opportunity for the community to express its compassion for those who are homeless and hungry. At the Empty Bowl benefit for Hospitality House, soup is served in bowls handmade by local artists that event-goers may take home with them as a reminder of their support of their neighbors in need.
                     </p>
-                    <a><h2>Read More</h2></a>
+                    <a href="http://www.theunion.com/entertainment/15304707-113/ninth-annual-empty-bowl-set-for-saturday" target="_blank"><h2>Read More</h2></a>
 
                     <div class="spacer">
                     </div>
@@ -136,7 +156,7 @@
                     <h2 class="news-title">Nirvana City: Fab Food Finds in California's Coolest Small Town</h2>
                     <p>Nestled in the Western foothills of California's Sierra Nevada mountain range, about an hour outside of Lake Tahoe, sits the quaint and picturesque town of Nevada City. The town, with a population of about 3000, was primarily built in the 1850s during California's gold rush. To this day the town retains much of that old-timey feel due to a prohibition...
                     </p>
-                    <a><h2>Read More</h2></a>
+                    <a href="http://www.swellmagazine.com/nirvana-city-fab-food-finds-in-californias-coolest-small-town" target="_blank"><h2>Read More</h2></a>
 
                     <div class="spacer">
                     </div>
@@ -146,10 +166,10 @@
                         <img class="img-responsive" src="assets/images/news_gaygoattravelslogo.png"/>
                         </div>
                     </div>
-                    <h2 class="news-title">Nirvana City: Fab Food Finds in California's Coolest Small Town</h2>
-                    <p>Nestled in the Western foothills of California's Sierra Nevada mountain range, about an hour outside of Lake Tahoe, sits the quaint and picturesque town of Nevada City. The town, with a population of about 3000, was primarily built in the 1850s during California's gold rush. To this day the town retains much of that old-timey feel due to a prohibition...
+                    <h2 class="news-title">Nevada City</h2>
+                    <p>Nevada City is among the most interesting of California gold rush towns, attracting visitors from far and wide. The entire downtown district is a national historic landmark where guests enjoy quality restaurants, comfortable lodgings and a variety of fine shops, museums, all flavored with old-fashioned Nevada City hospitality...
                     </p>
-                    <a><h2>Read More</h2></a>
+                    <a href="http://gaygoat.com/index.php/nevada-city/" target="_blank"><h2>Read More</h2></a>
                 </div>
             </div>
 
@@ -161,13 +181,19 @@
                     <img class="footer-logo" src="assets/images/logo.png"/>
                     <div class="row social-images">
                         <div class="col-xs-1 col-xs-offset-4">
-                            <img class="social-img" src="assets/images/social_yelp.png"/>
+                            <a href="https://www.yelp.com/biz/fudenjuce-nevada-city" target="_blank">
+                                <img class="social-img" src="assets/images/social_yelp.png"/>
+                            </a>
                         </div>
                         <div class="col-xs-1">
-                            <img class="social-img" src="assets/images/social_facebook.png"/>
+                            <a href="https://www.facebook.com/fudenjuce/" target="_blank">
+                                <img class="social-img" src="assets/images/social_facebook.png"/>
+                            </a>
                         </div>
                         <div class="col-xs-1">
-                            <img class="social-img" src="assets/images/social_yahoo.png"/>
+                            <a href="https://local.yahoo.com/info-21808985-fudenjuce-nevada-city" target="_blank">
+                                <img class="social-img" src="assets/images/social_yahoo.png"/>
+                            </a>
                         </div>
                     </div>
                 </div>
