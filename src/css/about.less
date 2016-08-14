@@ -41,3 +41,25 @@ body {
     //background-size: contain;
     background-size: 100% 100%;
 }
+
+.sculpture-list {
+    list-style: none;
+    margin-left: -15px;
+
+    .sculpture-li {
+        counter-increment: item;
+        margin-bottom: 5px;
+        span {
+            padding-left: 20px;
+            display: block;
+        }
+    }
+    .sculpture-li::before {
+        content: counter(item);
+        font-weight: bold;
+        margin-right: 10px;
+        position: absolute;
+        text-align: center;
+        width: 9px;
+    }
+}
