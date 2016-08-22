@@ -5,7 +5,7 @@
  */
 
 $('.carousel').carousel({
-    interval: false
+    interval: 3500
 });
 
 // only use the multi-item carousel if the window is large enough
